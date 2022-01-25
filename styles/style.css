@@ -5,10 +5,9 @@ body {
 }
 
 .header {
-    position: absolute;
     background: #fff url("../images/header-bg.png") no-repeat;
-    background-size: auto 500px;
-    width: 100%;
+    background-size: cover;
+    height: 500px;
 }
 
 .header-nav {
@@ -36,43 +35,53 @@ body {
     text-transform: uppercase;
 }
 
+.header-hero {
+    display: flex;
+
+}
+
+.header-icons {
+    display: flex;
+}
+
 .header-title {
-    margin: 30px 0 0 280px;
+    margin: 50px 0 0 270px;
 }
 
 .header-subtitle {
-    margin: 10px 0 0 280px;
-    width: 608px;
+    margin: 10px 0 0 270px;
+    width: 400px;
 }
 
 .title {
     font-weight: 600;
-    font-size: 120px;
-    color: #FCFDFF;
+    font-size: 90px;
     text-transform: uppercase;
+    color: #FCFDFF;
 }
 
 .subtitle {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
 }
 
+.icon-games,
+.icon-horse,
+.icon-knowledge{
+    width: 140px;
+    height: 140px;
+}
+
 .icon-games {
-    position: absolute;
-    left: 875px;
-    top: 142px;
+    margin: 45px 30px 0 0;
 }
 
 .icon-horse {
-    position: absolute;
-    left: 1088px;
-    top: 100px;
+    margin: -8px 0 0 -59px;
 }
 
 .icon-knowledge {
-    position: relative;
-    left: 1000px;
-    top: -90px;
+    margin-top: 176px;
 }
 
