@@ -26,31 +26,33 @@
 
 
 .icon1 {
-    position: absolute;
     top: 256px;
-    left: 1057px;
+    margin-left: 69px;
 }
 
 .icon2 {
-    position: absolute;
-    top: 213px;
-    left: 1307px;
+    margin-top: -43px;
+    margin-left: 110px;
 }
 
 .icon3 {
-    position: absolute;
-    top: 384px;
-    left: 1190px;
+    margin-top: 116px;
+    margin-left: -281px;
 }
 
 .header-section {
     display: flex;
-    justify-content: baseline;
+    margin: 0 auto;
 }
 
 .icon-section {
     display: flex;
-    /* position: relative; */
+    position: relative;
+}
+
+.txt-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation {
@@ -76,21 +78,16 @@
 
 .about {
     margin-top: 144px;
-    margin-left: 380px;
     font-size: 100px;
-}
-
-.about-mini {
-    margin-left: 380px;
 }
 
 /* TAGS */
 
 .main-tags {
     display: flex;
-    margin-left: 380px;
     margin-top: 74px;
-    gap: 10px;
+    gap: 10px;  
+    justify-content: center;
 }
 
 .tags {
@@ -98,7 +95,6 @@
     border: 2.5px solid #F2F4F9;
     box-sizing: border-box;
     border-radius: 15px;
-
 }
 
 
