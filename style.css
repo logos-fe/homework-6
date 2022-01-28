@@ -26,7 +26,7 @@
 	background: url("./img/logo.png")  no-repeat;
 	position: absolute;
 	top: 19px;
-	left: 241px;
+	left: 200px;
 }
 
 .nav {
@@ -82,7 +82,7 @@ a {
 	top: -100px;
 }
 .main {
-	height: 2320px;
+	height: 2650px;
 	background:url("./img/bg_main.png") no-repeat;
 	
 }
@@ -192,7 +192,9 @@ a {
 
 .pagination{
 	display: flex;
-	margin-left: 380px;
+	margin-left: 310px;
+	
+	
 
 }
 
@@ -201,7 +203,9 @@ a {
 	position: relative;
 	margin-right: 48px;
 	margin-top: 50px;
+	
 }
+
 
 .pagination_button button{
 	width: 44px;
@@ -210,11 +214,21 @@ a {
 	border-radius: 12px;
 	text-transform: none;
 	cursor: pointer;
+	color: #9594AA;
+	background: white;
 }
 
 .pagination_button button:hover{
-	border: 3px solid #363078;
+	border: 3px solid  blue;
 }
+
+.pagination_icon{
+	margin-right: 40px;
+	height: 20px;
+	margin-top: 60px;
+	cursor: pointer;
+}
+
 
 
 
