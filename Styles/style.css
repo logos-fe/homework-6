@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+    margin: 0;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    font-family: Dosis;
+}
+
+/* HEADER */
+
+
+.header {
+    background-image: url(../Images/bg.png);
+    width: 100%;
+    height: 626px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-size: cover;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.watch200 {
+    top: 256px;
+    margin-left: 69px;
+}
+
+.horse {
+    margin-top: -43px;
+    margin-left: 110px;
+}
+
+.brain {
+    margin-top: 116px;
+    margin-left: -281px;
+}
+
+.header-section {
+    display: flex;
+    margin: 0 auto;
+}
+
+.icon-section {
+    display: flex;
+    position: relative;
+}
+
+.txt-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    width: 90%;
+    height: 171px;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 19px;
+}
+
+.nav-menu {
+    display: flex;
+    color: white;
+    gap: 100px;
+    margin-top: 22px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.about {
+    margin-top: 144px;
+    font-size: 100px;
+}
+
+/* TAGS */
+
+.main-tags {
+    display: flex;
+    margin-top: 74px;
+    gap: 10px;
+    margin-left: 360px;
+
+}
+
+.tags {
+    color: #9A98AF;
+    border: 2.5px solid #F2F4F9;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+/* GAME BLOCK */
+
+.rating {
+    border-radius: 10px;
+    background-color: #363078;
+    padding: 10px 18px;
+    position: absolute;
+    margin: 10px;
+    color: white;
+}
+
+.game-block {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-image: url(../Images/bg&polygons\ -\ games.png);
+    background-size: cover;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+ }
+
+.game-block-left {
+    width: 560px;
+}
+
+.game-block-right {
+    width: 560px;
+}
+
+.game {
+    display: flex;
+    margin-top: 90px;
+    box-shadow: 0px 6px 20px rgba(61, 70, 118, 0.08);
+    border-radius: 30px;
+    background: #FFFFFF;
+    height: 380px;
+
+}
+
+.game-text {
+    /* text-align: center; */
+    padding: 40px;
+}
+
+.game-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.game-main-tags {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-tags {
+    background: #FFFFFF;
+    border: 2px solid #F2F4F9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../Images/Vector17.png);
+    height: 502px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    /* outline: 1px solid red; */
+    gap: 80px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* PAGINATION */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+    /* border-top: 1px solid #dee2e6; */
+    padding-top: 15px;
+}
+
+.pagination .item {
+    display: inline-block;
+}
+
+.pagination .item .link {
+    padding: 6px 8px;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-right: 8px;
+    border: 1px solid #fff;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8A93A6;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.pagination .item .link:hover {
+    background-color: #ebf2fd;
+    color: #5a8dee;
+}
+
+.pagination .item.disabled .link {
+    background-color: #F6F7FB;
+    color: #D7DAE0;
+    cursor: not-allowed;
+}
+
+.pagination .item:first-child .link, .pagination .item:last-child .link {
+    /* background-color: #F6F7FB; */
+}
+
+.pagination .item.active .link {
+    background-color: #5a8dee;
+    border-color: #5a8dee;
+    /* color: #fff; */
+}
+
+.txt-white {
+    color: white;
+}
