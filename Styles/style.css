@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-body {
+
+/* body {
     margin: 0;
-}
+} */
 
 
 .main {
@@ -15,30 +16,27 @@ body {
 
 .header {
     background-image: url(../Images/bg.png);
-    /* background-position: fixed; */
     width: 100%;
-    height: 650px;
-    /* background-repeat: no-repeat; */
+    height: 626px;
     display: flex;
     flex-direction: column;
-    top: 0;
-    left: 0;
+    margin: 0 auto;
     background-size: cover;
+    width: 100%;
+    max-width: 1920px;
 }
 
-
-
-.icon1 {
+.watch200 {
     top: 256px;
     margin-left: 69px;
 }
 
-.icon2 {
+.horse {
     margin-top: -43px;
     margin-left: 110px;
 }
 
-.icon3 {
+.brain {
     margin-top: 116px;
     margin-left: -281px;
 }
@@ -61,7 +59,7 @@ body {
 .navigation {
     display: flex;
     width: 90%;
-    height: 241px;
+    height: 171px;
     justify-content: center;
     gap: 200px;
     margin-top: 19px;
@@ -89,8 +87,9 @@ body {
 .main-tags {
     display: flex;
     margin-top: 74px;
-    gap: 10px;  
+    gap: 10px;
     justify-content: center;
+
 }
 
 .tags {
