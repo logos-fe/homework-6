@@ -230,6 +230,7 @@ body {
     display: inline-block;
     text-align: center;
     cursor: pointer;
+    line-height: 24px;
 }
 
 .pagination .item .link:hover {
@@ -244,13 +245,13 @@ body {
 }
 
 .pagination .item:first-child .link, .pagination .item:last-child .link {
-    background-color: #F6F7FB;
+    /* background-color: #F6F7FB; */
 }
 
 .pagination .item.active .link {
     background-color: #5a8dee;
     border-color: #5a8dee;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .txt-white {
