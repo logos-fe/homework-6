@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+header {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 1920px;
+    height: 626px;
+    background: white url("../images/bg.png");
+    background-size: cover;
+}
+.blue-back{
+    font-family: 'Roboto', sans-serif;
+    position:absolute;
+    width: 1920px;
+    height: 2500px; 
+    background: white url("../images/bg&polygons.png");
+    background-size: cover;
+   
+}
+
+.header-nav {
+    border-radius: 0px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin: 10px 117px 96px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.nav-logo {
+    
+    margin: 19px 199px 227px 241px;
+}
+
+.nav-item {
+ 
+    padding-right :104px;
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #D9D8E4;
+    display: inline-block;
+    margin: 49px 30px 29px 0px;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+}
+
+
+.nav-icons {
+    margin: 28px 32px 28px 0;
+}
+
+.icon {
+    margin-right: 25px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.header-title {
+    position: relative;
+    margin: 180px 0px 20px 400px;
+}
+
+.header-subtitle {
+    position: absolute;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    margin: 20px 0px 135px 0px;
+}
+
+
+
+.l{
+position: absolute;
+width: 91px;
+height: 65px;
+font-family: 'Dosis', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 65px;
+line-height: 100%;
+text-transform: uppercase;
+color: #2F73F6;
+}
+.hexagon {
+  
+	width: 100px;
+	height: 60px;
+	background: #FFFFFF;
+	position: relative;
+    /* border-radius: 10px; */
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid #FFFFFF;
+
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid #FFFFFF;
+}
+.number{
+    margin-top: -120px;
+    margin-left: 700px;
+}
+.cow{
+    margin-top: -120px;
+    margin-left: 220px;
+}
+.brain{
+    margin-top: 140px;
+    margin-left: -96px;
+}
+.image1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sorting {
+    margin-bottom:30px; 
+    padding: 4px;
+   }
+   .martin {
+    width:74px;
+    height:44px;
+    border-radius: 20px;
+    border:1px solid #e7e6ec;
+    display: inline; 
+    margin: 5px; 
+    padding: 10px 24px 13px 24px; 
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height :20px;
+    text-align: center;
+    flex: none;
+     order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+   
+   }
+   .bad{
+    color: #9A98AF;
+   }
+   .ok{
+    color: #2376F2;
+   }
+.margin-block{
+    margin-top: 300px;
+    margin-left: 380px;
+}
+.main-games{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top: 50px;
+    margin-left: 400px;
+    max-width: 1210px;
+}
+.cartoon{
+    margin: 10px;
+    padding:0px 10px;
+    background: white;
+    border: none;
+    border-radius: 30px;
+    width: 560px;
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #222A3F;
+    box-shadow: 0px 6px 20px rgba(61, 70, 118, 0.08);
+    
+}
+
+
+.leftimg  {
+    float: left; 
+    margin: 7px 40px 92px 30px;
+    padding:10px; 
+    height:300px;
+     width:230px;
+   }
+.cartoon h1{
+    font-family: Dosis;
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 120%;
+margin-top: 40px;
+margin-bottom: 18px;
+/* or 31px */
+
+color: #222A3F;
+}
+.link-text{
+    float: left;
+    margin: 10px 0px 52px -280px;
+    padding:10px;
+    height: auto;
+}
+.sim{
+    float: left;
+    margin: 10px 0px 52px -170px;
+    padding: 10px;
+    height: auto;
+}
+.spider-text{
+    float: left;
+    margin: 80px 0px 52px -210px;
+    padding: 10px;
+    height: auto;
+}
+.fox1{
+    float: left;
+    margin: 120px 0px 52px -280px;
+    padding: 10px;
+    height: auto;
+}
+.fox2{
+    float: left;
+    margin: 120px 0px 52px -170px;
+    padding: 10px;
+    height: auto;
+}
+.pig{
+    float: left;
+    margin: 100px 0px 52px -210px;
+    padding: 10px;
+    height: auto;
+}
+
+.slider-icons{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 3010px;
+    left:52%;
+    width: 400px;
+    height: 25px;
+    padding: 5px;
+    transform: translateX(-52%);
+}
+.arrow{
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    left: 120px;
+    top: 0px;
+    border: 2.5px solid #F2F4F9;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+
+/* identical to box height, or 21px */
+    text-align: center;
+    color: #2F73F6;
+}
+.arrow:nth-child(2){
+    border: 2.5px solid #2F73F6;;
+}
+.arrow-sim{
+  border: none;
+}
+.footer{
+    margin-top:101px;
+    height: 501px;
+    width: 100%;
+    background: white url("../images/Vector\ 17.png");
+}
+.footer-item{
+    display: inline-flex;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: white;
+    margin: 0px 40px;
+    
+}
+.bug-footer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    transform: translateY(-92%);
+    left:30%;
+    top:92%;
+    margin-bottom: 10px;
+}
