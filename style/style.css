@@ -2,190 +2,126 @@
 
 body {
     font-family: 'Dosis', sans-serif;
-    background: white;
-    width: 100%;
-    max-width: 100%;
+    background: rgb(255, 255, 255);
     overflow-x: hidden; 
 }
-.wave {
-    /* z-index: 0;
-    position: static; */
-    position: absolute;
-    display: block;
-    z-index: 0;
-    
-}
 
-/* header */
-
-.header-start {
-    display: grid;
-    height: 100px;
-    width: 100vh;
-    grid-template-columns: repeat(9, 150px);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-    color: white;
-    gap: 3px;
-    white-space: nowrap;
-    text-transform: uppercase;
-    word-spacing: 3px;
-    z-index: 1;
-    margin-left: 241px;
-} 
-.products,
-.test-drive,
-.for-kids,
-.games,
-.contacts-us,
-.faq {
-    margin-top: 50px;
-    margin-left: 250px;
-    cursor: pointer;
-    transition: 0.8s;
-    z-index: 1;
-}
-.products:hover,
-.test-drive:hover,
-.for-kids:hover,
-.games:hover,
-.contacts-us:hover,
-.faq:hover {
-    color: rgb(1, 232, 240);
-    font-size: 14px;
-}
-.logo {
-    margin-top: 19px;
-    cursor: pointer;
-    z-index: 1;
-}
-.logo > img {
-    transition: all 0.7s ease-in-out 0s;
-}
-.logo > img:hover {
-    transform: rotate(28deg);
-    transition: all 0.7s ease-in-out 0s;
-}
-
-
-/* top-content */
-
-.top-content {
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat( 2, 1fr);
-    height: 400;
-    width: 100%;
-    margin-top: 144px;
-    gap: 20px;
-}
-.content-left {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row: 400px;
-    z-index: 1;
-    margin-left: 300px;
-}
-.content-right {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
-    z-index: 1;
-    margin-left: 100px;
-}
-
-
-
-
-
-/* content left */
-
-.game {
-    z-index: 1;
+.header-menu {
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat;
-    margin-left: 80px;
+    height: 650px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.top_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+.nav_button {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+.nav_button:after {
+    display: block; 
+    content: ""; 
+    height: 3px; 
+    width: 0%; 
+    background-color: rgb(125, 238, 241);; 
+    transition: width 0.4s ease-in-out; 
+}
+.nav_button:hover:after,
+.nav_button:focus:after {
+    width: 100%;
+}
+.nav_button:hover{
+    color:rgb(125, 238, 241);;
+} 
+.nav_pic {
+    position: relative;
+    left: -16%;
+}
+.header-content {
+    position: absolute;
+    left:10%;
+    right: 0;
+    top: 20%; 
+    bottom:0;
+}
+.hide-icon,
+.game-png,
+
+
+.icon-brain,
+.icon-200,
+.icon-group,
+.text {
+    position: absolute;
+}
+.hide-icon,
+.game-png {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.hide-icon {
+    margin-left: 12%;
+    margin-top: 4%;
+}
+
+.icon-200 {
+    margin-left: 55%;
+    margin-top: 3%;
+}
+
+.icon-group {
+    margin-top: 0;
+    margin-left: 70%;
+}
+
+.icon-brain {
+    margin-left: 63%;
+    margin-top: 10%;
 }
 .text {
+    margin-top: 15%;
+    font-size: 25px;
+    font-weight: 700;
     color: white;
-    margin-left: 80px;
-    white-space: nowrap;
-    padding-top: 140px;
-    position: absolute;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
+    margin-left: 15%;
 }
-#hide-icon {
-    position: absolute;
-    z-index: 1;
-    margin-left: -50px;
-    margin-top: -50px;
+.main-tag {
+    display: flex;
 }
-
-/* content right */
-
-.icon1,
-.icon2,
-.icon3 {
-    z-index: 1;
-    background-repeat: no-repeat;
-}
-#white-icon1,
-#white-icon2,
-#white-icon3,
-#icon-200,
-#icon-group,
-#icon-brain {
-    position: absolute;
-    z-index: 1;
-}
-#white-icon1 {
-    margin-top: -40px;
-    margin-left: -20px;
-}
-#icon-200 { 
-    margin-top: 17px;
-    margin-left: 20px;
-}
-#white-icon2 {
-    margin-top: -80px;
-    margin-left: -190px;
-}
-#icon-group {
-    margin-left: -137px;
-    margin-top: -26px;
-}
-#white-icon3 {
-    margin-top: -60px;
-    margin-left: 120px;
-}
-#icon-brain { 
-    margin-left: 170px;
-    margin-top: -10px;
-}
-
-
-/* tag-menu */
-
 .tag-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 10%);
-    grid-template-rows: repeat(1, 45px);
-    z-index: 1;
-    margin-top: 280px;
+    display: inline-flex;
+    position: relative;
+    margin-top: 2%;
     gap: 10px;
-    margin-left: 380px;
     text-align: center;
     width: 100%;
+    margin-left: 10%;
 }
 .tag-button {
-    border: 2.5px solid #F2F4F9;
+    border: 2.5px solid #c1c2c5;
     box-sizing: border-box;
     border-radius: 15px;
     line-height: 45px;
     cursor: pointer;
     transition: 0.5s;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 500;
 }
 .tag-button:hover {
     color: blue;
@@ -193,143 +129,125 @@ body {
     font-size: 18px;
     font-weight: 800;
 }
-
-
-
-/* main-cards */
-
-.main-cards {
-    display: grid;
-    grid-template-columns: 560px 560px;
-    grid-auto-rows: 365px 365px 365px 365px 365px 100px 300px;
-    z-index: 1;
-    height: auto;
-    margin-top: 80px;
-    gap: 70px;
-    justify-content: center;
+.main-menu-bg {
+    height: 2320px;
+    background-image: url(../img/bg&polygons\ -\ games.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     width: 100%;
 }
-
-/* column 1 */
-
-.Bath-Trouble,
-.Go-Fishing {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+.footer-bg {
+    width: 100%;
+    height: 450px;
+    background-image: url(../img/bg&polygons\ -\ footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
 }
-#pic1 {
+.cards_menu {
+    margin: 0;
     position: absolute;
-    display: block;
-    z-index: 0;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
-/* 1 */
-.card-left {
+.cards {
     display: grid;
-    grid-auto-rows: auto;
-    grid-auto-columns: auto;
-    z-index: 1; 
-    margin-left: 40px;
-    margin-top: -20px;
+    grid-template-columns: 560px 560px;
+    grid-template-rows: repeat(5, 365px);
+    background: none;
+    gap: 20px;
 }
-.pictures {
-    
+.menu_item {
+    background-image: url(../img/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
 }
-.tags1 {
-    margin-top: 20px;
-    margin-left: 10px;
+.item_logo {
+    margin-left: 7%;
+    margin-top: -2%;
 }
-
-#raiting {
-    margin-top: 10px;
+.card_tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 52.5%;
+    margin-left: -41%;
+}
+.item_tag {
+    border: 1px solid #a7a8aa;
+    box-sizing: border-box;
+    border-radius: 15px;
+    line-height: 35px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.item_tag:hover {
+    font-size: 15px;
+    font-weight: 600;
+}
+.item_header {
+    position: fixed;
+    font-weight: 600;
+    font-size: 26px;
+    margin-left: 27%;
+    margin-top: 3%;
+}
+.item_text {
+    margin-top: 8%;
+    margin-left: 27%;
+    position: fixed;
+    font-weight: 600;
+    font-size: 16px;
+    width: 220px;
+    height: 209px;
+    line-height: 1.5;
+}
+.raiting_10 {
     position: absolute;
-    margin-left: -220px;
+    margin-left: 5%;
 }
-/* 2 */
-.card-right {
+.footer-menu {
     display: grid;
-    grid-auto-rows: auto;
-    grid-auto-columns: auto;
-    z-index: 1;
-    margin-left: 30px;
-    margin-top: 60px;
-}
-.tag-header {
-
-}
-.tag-content {
-
-}
-
-
-
-
-/* column 2 */
-.Gold-Bay,
-.Bridge-It {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-}
-#pic2 {
+    height: 50px;
+    width: 100vh;
+    grid-template-columns: repeat(6,150px);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: white;
+    white-space: nowrap;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    margin: 0;
     position: absolute;
-    display: block;
-    z-index: 0;
+    top: 85%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-/* 1 */
-.card-left2 {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-auto-columns: auto;
-    z-index: 1;
-}
-.pictures2 {
-    margin-left: 40px;
-}
-.tags2 {
-   margin-top: 260px;
-   justify-self: center;
-}
-
-/* 2 */
-.card-right2 {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-auto-columns: auto;
-    z-index: 1;
-    margin-left: 30px;
-    margin-top: 60px;
-}
-.tag-header2 {
-
-}
-.tag-content2 {
-    margin-top: -60px;
-
-}
-.text2,
-.main2 {
-    position: absolute;
-    z-index: 0;
-    margin-top: -20px;
-}
-#raiting2 {
-    margin-top: 10px;
-    position: sticky;
-    z-index: 2;
-}
-
-/* end-menu */
 
 .scroll-menu {
     display: grid;
     grid-template-columns: repeat(7, 45px);
     grid-template-rows: repeat(1, 45px);
-    z-index: 1;
     gap: 10px;
-    margin-left:425px;
+    margin-left: 40.5%;
     text-align: center;
-   
+    background: none;
+    margin-top: -250px;
+    position: absolute;
 }
 .scroll {
     border: 2.5px solid #F2F4F9;
@@ -353,45 +271,3 @@ body {
 .scroll1:hover {
     transform: scale(1.3);
 }
-
-/* footer-menu */
-
-.footer-menu {
-    display: grid;
-    height: 50px;
-    width: 100vh;
-    grid-template-columns: repeat(6,150px);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-    color: white;
-    white-space: nowrap;
-    text-transform: uppercase;
-    word-spacing: 3px;
-    z-index: 1;
-    margin-left: 500px;
-    z-index: 1;
-}
-.products2,
-.test-drive2,
-.for-kids2,
-.games2,
-.contacts-us2,
-.faq2 {
-    cursor: pointer;
-    transition: 0.8s;
-    z-index: 1;
-    color: steelblue;
-}
-.products2:hover,
-.test-drive2:hover,
-.for-kids2:hover,
-.games2:hover,
-.contacts-us2:hover,
-.faq2:hover {
-    color: rgb(1, 232, 240);
-    font-size: 14px;
-}
-
-/* imgs-background */
-
