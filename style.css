@@ -108,6 +108,9 @@
 .header-img-knowledge:hover{
     transform: scale(1.5);
 }
+body{
+    overflow-x: hidden
+}
 .body{
     background: white url(./fon/menu.png) center;
     background-size: cover;
